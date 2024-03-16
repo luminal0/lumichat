@@ -1,7 +1,7 @@
 import React from "react";
 import GenderCheckBox from "./GenderCheckBox";
 import { Link } from "react-router-dom";
-import useSignup from "../../../hooks/useSignup";
+import useSignup from "../../hooks/useSignup";
 
 const SignUp = () => {
 
@@ -89,8 +89,8 @@ const SignUp = () => {
           </div>
             <GenderCheckBox onCheckboxChange ={handleCheckboxChange} selectedGender ={inputs.gender} />
           <div>
-            <button className="btn btn-block btn-sm mt-4 bg-rose-900 border-none">
-              Sign Up
+            <button className="btn btn-block btn-sm mt-4 bg-rose-900 border-none" disabled={loading}>
+              {loading? <span className="loading loading-spinner"></span> : "Sign up"}
             </button>
 
 
