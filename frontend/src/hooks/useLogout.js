@@ -1,5 +1,5 @@
 import toast from "react-hot-toast";
-import { useAuthContext } from "../src/context/AuthContext";
+import { useAuthContext } from "../context/AuthContext";
 import { useState } from "react";
 
 
